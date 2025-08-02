@@ -5,28 +5,88 @@
   <title>SpheraLive</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="SpheraLive – iOS app for YouTube Live streaming with integrated chat." />
 </head>
-<body class="bg-gray-50 text-gray-900 antialiased">
-  <div class="max-w-2xl mx-auto px-6 py-16">
-    <header class="text-center mb-12">
-      <h1 class="text-5xl font-extrabold mb-2">SpheraLive</h1>
-      <p class="text-gray-600">YouTube Live streaming with integrated chat. iOS app.</p>
-      <p class="mt-4 text-sm">Version: <strong>1.0</strong></p>
+<body class="bg-gray-100 text-gray-900 antialiased">
+  <div class="max-w-5xl mx-auto px-6 py-16">
+    <header class="flex flex-col md:flex-row items-center gap-6 mb-12">
+      <div class="flex-none">
+        <img src="icon.png" alt="SpheraLive icon" class="w-32 h-32 rounded-2xl shadow-lg object-cover bg-white" />
+      </div>
+      <div class="flex-auto">
+        <h1 class="text-5xl font-extrabold mb-2">SpheraLive</h1>
+        <p class="text-lg text-gray-600 mb-2">YouTube Live streaming with integrated chat. iOS app.</p>
+        <p class="text-sm">Version: <strong>1.0.0</strong></p>
+      </div>
     </header>
 
-    <div class="bg-white rounded-lg shadow p-8 space-y-6 prose">
-      <p>Welcome to SpheraLive. Below are key legal and support resources:</p>
+    <section class="grid md:grid-cols-2 gap-8 mb-12">
+      <!-- screenshot cards -->
+      <div class="space-y-4">
+        <div class="rounded-xl overflow-hidden shadow-lg bg-white">
+          <img src="screenshot1.png" alt="Screenshot 1" class="w-full object-cover">
+          <div class="p-3">
+            <p class="font-semibold">Stream Setup</p>
+            <p class="text-sm text-gray-600">Choose resolution, frame rate, and start streaming instantly.</p>
+          </div>
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-lg bg-white">
+          <img src="screenshot2.png" alt="Screenshot 2" class="w-full object-cover">
+          <div class="p-3">
+            <p class="font-semibold">Live Chat</p>
+            <p class="text-sm text-gray-600">See and interact with YouTube Live chat in real time.</p>
+          </div>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <div class="rounded-xl overflow-hidden shadow-lg bg-white">
+          <img src="screenshot3.png" alt="Screenshot 3" class="w-full object-cover">
+          <div class="p-3">
+            <p class="font-semibold">Camera Switching</p>
+            <p class="text-sm text-gray-600">Flip between front and back cameras seamlessly.</p>
+          </div>
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-lg bg-white">
+          <img src="screenshot4.png" alt="Screenshot 4" class="w-full object-cover">
+          <div class="p-3">
+            <p class="font-semibold">Stream Status</p>
+            <p class="text-sm text-gray-600">Monitor bitrates, connection health, and live preview.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-white rounded-xl shadow p-8 mb-16 prose">
+      <p>Welcome to <strong>SpheraLive</strong>. Stream live to YouTube, manage your broadcast, and interact with chat—all from your iOS device. Below are the legal and support resources:</p>
       <ul class="list-disc">
-        <li><a href="/privacy.html" class="text-blue-600 underline">Privacy Policy</a></li>
-        <li><a href="/terms.html" class="text-blue-600 underline">Terms of Service</a></li>
-        <li><a href="/licenses.html" class="text-blue-600 underline">Open Source Licenses</a></li>
+        <li><a href="/SpheraLive/privacy.html" class="text-blue-600 underline">Privacy Policy</a></li>
+        <li><a href="/SpheraLive/terms.html" class="text-blue-600 underline">Terms of Service</a></li>
+        <li><a href="/SpheraLive/licenses.html" class="text-blue-600 underline">Open Source Licenses</a></li>
       </ul>
       <p>Support: <a href="mailto:spheralive@googlegroups.com" class="text-blue-600 underline">spheralive@googlegroups.com</a></p>
     </div>
-
-    <footer class="mt-16 text-center text-sm text-gray-500">
-      <p>© 2025 SpheraLive. All rights reserved.</p>
-    </footer>
   </div>
+
+  <footer class="bg-black text-gray-300">
+    <div class="max-w-5xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between gap-8">
+      <div class="flex flex-col gap-2">
+        <h3 class="text-white font-semibold">SpheraLive</h3>
+        <p class="text-sm">YouTube Live streaming with integrated chat.</p>
+        <p class="text-xs mt-2">© 2025 SpheraLive. All rights reserved.</p>
+      </div>
+      <div class="flex gap-12">
+        <div class="flex flex-col">
+          <span class="font-medium text-sm text-white mb-1">Legal</span>
+          <a href="/SpheraLive/privacy.html" class="text-sm hover:underline">Privacy Policy</a>
+          <a href="/SpheraLive/terms.html" class="text-sm hover:underline">Terms of Service</a>
+          <a href="/SpheraLive/licenses.html" class="text-sm hover:underline">Licenses</a>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-medium text-sm text-white mb-1">Support</span>
+          <a href="mailto:spheralive@googlegroups.com" class="text-sm hover:underline">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
